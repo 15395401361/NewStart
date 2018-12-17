@@ -15,7 +15,6 @@
 		0967255E21C737CC00C79CE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0967255D21C737CC00C79CE8 /* main.m */; };
 		0967256821C737CC00C79CE8 /* BjAiSportsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0967256721C737CC00C79CE8 /* BjAiSportsTests.m */; };
 		0967257321C737CC00C79CE8 /* BjAiSportsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0967257221C737CC00C79CE8 /* BjAiSportsUITests.m */; };
-		09BD11AB21C7856F005B72D7 /* ddd in Resources */ = {isa = PBXBuildFile; fileRef = 09BD11AA21C7856F005B72D7 /* ddd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		0967256E21C737CC00C79CE8 /* BjAiSportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BjAiSportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0967257221C737CC00C79CE8 /* BjAiSportsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BjAiSportsUITests.m; sourceTree = "<group>"; };
 		0967257421C737CC00C79CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09BD11AA21C7856F005B72D7 /* ddd */ = {isa = PBXFileReference; lastKnownFileType = text; path = ddd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +148,6 @@
 				0967258421C73A5B00C79CE8 /* Modules */,
 				0967258321C73A4F00C79CE8 /* Category */,
 				0967258221C73A4300C79CE8 /* Libs */,
-				09BD11AA21C7856F005B72D7 /* ddd */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -409,7 +406,6 @@
 				0967255B21C737CC00C79CE8 /* LaunchScreen.storyboard in Resources */,
 				0967255821C737CC00C79CE8 /* Assets.xcassets in Resources */,
 				0967255621C737CA00C79CE8 /* Main.storyboard in Resources */,
-				09BD11AB21C7856F005B72D7 /* ddd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
