@@ -1,0 +1,14 @@
+workspace 'BjAiSports.xcworkspace'
+project 'BjAiSports.xcodeproj'
+#use_frameworks! 
+target 'BjAiSports' do
+  platform :ios, '8.0'
+  project 'BjAiSports.xcworkspace'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'SDWebImage', '~> 4.4.2'
+  pod 'MJRefresh', '~> 3.1.15.7'
+  pod 'Masonry', '~> 1.1.0'
+  pod 'MJExtension', '~> 3.0.15.1'
+
+end 
+
