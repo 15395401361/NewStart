@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0919D39721C7B13F00B5E2CD /* UIView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D39621C7B13F00B5E2CD /* UIView+Ext.m */; };
+		0919D3AC21C8874D00B5E2CD /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0919D3A721C8874D00B5E2CD /* Default-667h@2x.png */; };
+		0919D3AD21C8874D00B5E2CD /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0919D3A821C8874D00B5E2CD /* Default-736h@3x.png */; };
+		0919D3AE21C8874D00B5E2CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0919D3A921C8874D00B5E2CD /* Default-568h@2x.png */; };
+		0919D3AF21C8874D00B5E2CD /* Default-1366h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0919D3AA21C8874D00B5E2CD /* Default-1366h@2x.png */; };
+		0919D3B021C8874D00B5E2CD /* Default-812h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0919D3AB21C8874D00B5E2CD /* Default-812h@2x.png */; };
+		0919D3B521C88DF800B5E2CD /* QLKApiClient+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D3B321C88DF800B5E2CD /* QLKApiClient+Ext.m */; };
+		0919D3B621C88DF800B5E2CD /* QLKApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D3B421C88DF800B5E2CD /* QLKApiClient.m */; };
+		0919D3BF21C8912C00B5E2CD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D3BC21C8912C00B5E2CD /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0919D3C021C8912C00B5E2CD /* KXJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D3BD21C8912C00B5E2CD /* KXJson.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0919D3C321C892AC00B5E2CD /* NSDictionary+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D3C121C892AC00B5E2CD /* NSDictionary+Ext.m */; };
+		0919D3C621C892FC00B5E2CD /* NSMutableArray+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D3C521C892FC00B5E2CD /* NSMutableArray+Ext.m */; };
+		0919D3C921C896B400B5E2CD /* QLKEnvironmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D3C721C896B400B5E2CD /* QLKEnvironmentModel.m */; };
+		0919D3CD21C89A3800B5E2CD /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919D3CC21C89A3800B5E2CD /* NSString+Ext.m */; };
 		0967255021C737CA00C79CE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0967254F21C737CA00C79CE8 /* AppDelegate.m */; };
 		0967255321C737CA00C79CE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0967255221C737CA00C79CE8 /* ViewController.m */; };
 		0967255821C737CC00C79CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0967255721C737CC00C79CE8 /* Assets.xcassets */; };
@@ -19,6 +33,7 @@
 		09BD11BA21C79834005B72D7 /* QLKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11B921C79834005B72D7 /* QLKNavigationController.m */; };
 		09BD11BF21C798AB005B72D7 /* QLKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11BD21C798AB005B72D7 /* QLKBaseViewController.m */; };
 		09BD11C021C798AB005B72D7 /* QLKSubBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11BE21C798AB005B72D7 /* QLKSubBaseViewController.m */; };
+		09BD11C921C7A8CA005B72D7 /* UIColor+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11C721C7A8CA005B72D7 /* UIColor+Ext.m */; };
 		792E537249202CC160E37CB7 /* libPods-BjAiSports.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598745443A519538028B6A0 /* libPods-BjAiSports.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +55,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0919D39521C7B13F00B5E2CD /* UIView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ext.h"; sourceTree = "<group>"; };
+		0919D39621C7B13F00B5E2CD /* UIView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ext.m"; sourceTree = "<group>"; };
+		0919D3A721C8874D00B5E2CD /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		0919D3A821C8874D00B5E2CD /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		0919D3A921C8874D00B5E2CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0919D3AA21C8874D00B5E2CD /* Default-1366h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-1366h@2x.png"; sourceTree = "<group>"; };
+		0919D3AB21C8874D00B5E2CD /* Default-812h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-812h@2x.png"; sourceTree = "<group>"; };
+		0919D3B121C88DF800B5E2CD /* QLKApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKApiClient.h; sourceTree = "<group>"; };
+		0919D3B221C88DF800B5E2CD /* QLKApiClient+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QLKApiClient+Ext.h"; sourceTree = "<group>"; };
+		0919D3B321C88DF800B5E2CD /* QLKApiClient+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QLKApiClient+Ext.m"; sourceTree = "<group>"; };
+		0919D3B421C88DF800B5E2CD /* QLKApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKApiClient.m; sourceTree = "<group>"; };
+		0919D3B721C88E2B00B5E2CD /* KCConstants_API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCConstants_API.h; sourceTree = "<group>"; };
+		0919D3BB21C8912C00B5E2CD /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		0919D3BC21C8912C00B5E2CD /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		0919D3BD21C8912C00B5E2CD /* KXJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXJson.m; sourceTree = "<group>"; };
+		0919D3BE21C8912C00B5E2CD /* KXJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXJson.h; sourceTree = "<group>"; };
+		0919D3C121C892AC00B5E2CD /* NSDictionary+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Ext.m"; sourceTree = "<group>"; };
+		0919D3C221C892AC00B5E2CD /* NSDictionary+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Ext.h"; sourceTree = "<group>"; };
+		0919D3C421C892FC00B5E2CD /* NSMutableArray+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Ext.h"; sourceTree = "<group>"; };
+		0919D3C521C892FC00B5E2CD /* NSMutableArray+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Ext.m"; sourceTree = "<group>"; };
+		0919D3C721C896B400B5E2CD /* QLKEnvironmentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKEnvironmentModel.m; sourceTree = "<group>"; };
+		0919D3C821C896B400B5E2CD /* QLKEnvironmentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKEnvironmentModel.h; sourceTree = "<group>"; };
+		0919D3CB21C89A3800B5E2CD /* NSString+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
+		0919D3CC21C89A3800B5E2CD /* NSString+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
 		0967254B21C737C900C79CE8 /* BjAiSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BjAiSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0967254E21C737C900C79CE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0967254F21C737CA00C79CE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +105,10 @@
 		09BD11BC21C798AB005B72D7 /* QLKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKBaseViewController.h; sourceTree = "<group>"; };
 		09BD11BD21C798AB005B72D7 /* QLKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKBaseViewController.m; sourceTree = "<group>"; };
 		09BD11BE21C798AB005B72D7 /* QLKSubBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKSubBaseViewController.m; sourceTree = "<group>"; };
+		09BD11C321C7A654005B72D7 /* Common-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Common-Prefix.pch"; sourceTree = "<group>"; };
+		09BD11C421C7A7F7005B72D7 /* Static_Method.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Static_Method.h; sourceTree = "<group>"; };
+		09BD11C721C7A8CA005B72D7 /* UIColor+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ext.m"; sourceTree = "<group>"; };
+		09BD11C821C7A8CA005B72D7 /* UIColor+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ext.h"; sourceTree = "<group>"; };
 		8BE280E22A19F674F2943E9D /* Pods-BjAiSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BjAiSports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BjAiSports/Pods-BjAiSports.debug.xcconfig"; sourceTree = "<group>"; };
 		F598745443A519538028B6A0 /* libPods-BjAiSports.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BjAiSports.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA24F151C8970E8E80F2DAAD /* Pods-BjAiSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BjAiSports.release.xcconfig"; path = "Pods/Target Support Files/Pods-BjAiSports/Pods-BjAiSports.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +140,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0919D39821C880A700B5E2CD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0919D3A421C882A400B5E2CD /* Data */,
+				0919D39921C8826900B5E2CD /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		0919D39921C8826900B5E2CD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0919D3A921C8874D00B5E2CD /* Default-568h@2x.png */,
+				0919D3A721C8874D00B5E2CD /* Default-667h@2x.png */,
+				0919D3A821C8874D00B5E2CD /* Default-736h@3x.png */,
+				0919D3AB21C8874D00B5E2CD /* Default-812h@2x.png */,
+				0919D3AA21C8874D00B5E2CD /* Default-1366h@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		0919D3A421C882A400B5E2CD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0919D3BA21C890E100B5E2CD /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				0919D3BB21C8912C00B5E2CD /* JSONKit.h */,
+				0919D3BC21C8912C00B5E2CD /* JSONKit.m */,
+				0919D3BE21C8912C00B5E2CD /* KXJson.h */,
+				0919D3BD21C8912C00B5E2CD /* KXJson.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		0919D3CE21C89F1200B5E2CD /* Course */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		0919D3CF21C89F3F00B5E2CD /* Society */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Society;
+			sourceTree = "<group>";
+		};
 		0967254221C737C900C79CE8 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +218,7 @@
 		0967254D21C737C900C79CE8 /* BjAiSports */ = {
 			isa = PBXGroup;
 			children = (
+				0919D39821C880A700B5E2CD /* Resource */,
 				0967258121C7385800C79CE8 /* General */,
 				0967258021C7383400C79CE8 /* Appdelegate */,
 				0967255121C737CA00C79CE8 /* ViewController.h */,
@@ -174,6 +271,7 @@
 		0967258221C73A4300C79CE8 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				0919D3BA21C890E100B5E2CD /* JSONKit */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -181,6 +279,16 @@
 		0967258321C73A4F00C79CE8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				0919D3C421C892FC00B5E2CD /* NSMutableArray+Ext.h */,
+				0919D3C521C892FC00B5E2CD /* NSMutableArray+Ext.m */,
+				0919D3C221C892AC00B5E2CD /* NSDictionary+Ext.h */,
+				0919D3C121C892AC00B5E2CD /* NSDictionary+Ext.m */,
+				0919D39521C7B13F00B5E2CD /* UIView+Ext.h */,
+				0919D39621C7B13F00B5E2CD /* UIView+Ext.m */,
+				09BD11C821C7A8CA005B72D7 /* UIColor+Ext.h */,
+				09BD11C721C7A8CA005B72D7 /* UIColor+Ext.m */,
+				0919D3CB21C89A3800B5E2CD /* NSString+Ext.h */,
+				0919D3CC21C89A3800B5E2CD /* NSString+Ext.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -188,6 +296,8 @@
 		0967258421C73A5B00C79CE8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0919D3CF21C89F3F00B5E2CD /* Society */,
+				0919D3CE21C89F1200B5E2CD /* Course */,
 				0967259121C73B5700C79CE8 /* Mine */,
 				0967258D21C73B3500C79CE8 /* Home */,
 			);
@@ -208,6 +318,8 @@
 		0967258621C73A9300C79CE8 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				09BD11C321C7A654005B72D7 /* Common-Prefix.pch */,
+				09BD11C421C7A7F7005B72D7 /* Static_Method.h */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -224,6 +336,11 @@
 		0967258821C73AAB00C79CE8 /* NetWorkEngine */ = {
 			isa = PBXGroup;
 			children = (
+				0919D3B721C88E2B00B5E2CD /* KCConstants_API.h */,
+				0919D3B121C88DF800B5E2CD /* QLKApiClient.h */,
+				0919D3B421C88DF800B5E2CD /* QLKApiClient.m */,
+				0919D3B221C88DF800B5E2CD /* QLKApiClient+Ext.h */,
+				0919D3B321C88DF800B5E2CD /* QLKApiClient+Ext.m */,
 			);
 			path = NetWorkEngine;
 			sourceTree = "<group>";
@@ -241,6 +358,8 @@
 		0967258A21C73AD900C79CE8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0919D3C821C896B400B5E2CD /* QLKEnvironmentModel.h */,
+				0919D3C721C896B400B5E2CD /* QLKEnvironmentModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -469,7 +588,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0919D3AF21C8874D00B5E2CD /* Default-1366h@2x.png in Resources */,
 				0967255821C737CC00C79CE8 /* Assets.xcassets in Resources */,
+				0919D3AE21C8874D00B5E2CD /* Default-568h@2x.png in Resources */,
+				0919D3AC21C8874D00B5E2CD /* Default-667h@2x.png in Resources */,
+				0919D3AD21C8874D00B5E2CD /* Default-736h@3x.png in Resources */,
+				0919D3B021C8874D00B5E2CD /* Default-812h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,14 +657,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0919D3C921C896B400B5E2CD /* QLKEnvironmentModel.m in Sources */,
+				0919D3C321C892AC00B5E2CD /* NSDictionary+Ext.m in Sources */,
 				09BD11B321C79676005B72D7 /* RDVTabBarController.m in Sources */,
+				0919D3C621C892FC00B5E2CD /* NSMutableArray+Ext.m in Sources */,
 				0967255321C737CA00C79CE8 /* ViewController.m in Sources */,
+				0919D3B521C88DF800B5E2CD /* QLKApiClient+Ext.m in Sources */,
+				0919D3B621C88DF800B5E2CD /* QLKApiClient.m in Sources */,
 				09BD11BA21C79834005B72D7 /* QLKNavigationController.m in Sources */,
 				0967255E21C737CC00C79CE8 /* main.m in Sources */,
 				09BD11BF21C798AB005B72D7 /* QLKBaseViewController.m in Sources */,
+				09BD11C921C7A8CA005B72D7 /* UIColor+Ext.m in Sources */,
 				09BD11B421C79676005B72D7 /* RDVTabBar.m in Sources */,
+				0919D39721C7B13F00B5E2CD /* UIView+Ext.m in Sources */,
+				0919D3CD21C89A3800B5E2CD /* NSString+Ext.m in Sources */,
 				0967255021C737CA00C79CE8 /* AppDelegate.m in Sources */,
 				09BD11B521C79676005B72D7 /* RDVTabBarItem.m in Sources */,
+				0919D3C021C8912C00B5E2CD /* KXJson.m in Sources */,
+				0919D3BF21C8912C00B5E2CD /* JSONKit.m in Sources */,
 				09BD11C021C798AB005B72D7 /* QLKSubBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,6 +828,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24LS3L548Z;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BjAiSports/General/Macro/Public/Common-Prefix.pch";
 				INFOPLIST_FILE = BjAiSports/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -713,6 +850,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24LS3L548Z;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BjAiSports/General/Macro/Public/Common-Prefix.pch";
 				INFOPLIST_FILE = BjAiSports/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

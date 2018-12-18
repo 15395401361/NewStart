@@ -14,19 +14,19 @@
 @implementation QLKNavigationController
 
 - (UIImageView *)navBarHairlineImageView{
-//    if (_navBarHairlineImageView == nil) {
-//        _navBarHairlineImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,[[UIApplication sharedApplication] statusBarFrame].size.height+44, SCREEN_WIDTH, 1)];
-//        [self.view addSubview:_navBarHairlineImageView];
-//    }
+    if (_navBarHairlineImageView == nil) {
+        _navBarHairlineImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,[[UIApplication sharedApplication] statusBarFrame].size.height+44, SCREEN_WIDTH, 1)];
+        [self.view addSubview:_navBarHairlineImageView];
+    }
     return _navBarHairlineImageView;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    WS(weakSelf);
-//    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-//        self.interactivePopGestureRecognizer.delegate = weakSelf;
-//        self.delegate =  weakSelf;
-//    }
+    WS(weakSelf);
+    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.interactivePopGestureRecognizer.delegate = weakSelf;
+        self.delegate =  weakSelf;
+    }
     self.navBarHairlineImageView.hidden = NO;
 
     self.navBarHairlineImageView.image = [UIImage imageNamed:@"navBarLine"];
@@ -81,17 +81,14 @@
 #pragma mark - UINavigationControllerDelegate
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
-//    if(SYSTEM_VERSION >= 8 ){
-//        if ([navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-//            navigationController.interactivePopGestureRecognizer.enabled = YES;
-//            if (SharedAppDelegate.isLunchAdImageFromNotification && SharedAppDelegate.isClickLunchAdImageFromNotification) {//禁用从push+点击启动图的手势
-//                navigationController.interactivePopGestureRecognizer.enabled = NO;
-//            }
-//        }
-//        if (navigationController.viewControllers.count == 1) {
-//            navigationController.interactivePopGestureRecognizer.enabled = NO;
-//        }
-//    }
+    if(SYSTEM_VERSION >= 8 ){
+        if ([navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+            navigationController.interactivePopGestureRecognizer.enabled = YES;
+        }
+        if (navigationController.viewControllers.count == 1) {
+            navigationController.interactivePopGestureRecognizer.enabled = NO;
+        }
+    }
 }
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated

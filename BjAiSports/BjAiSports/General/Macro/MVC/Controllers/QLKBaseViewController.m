@@ -48,7 +48,7 @@
     self.navigationController.navigationBar.hidden = NO;
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.tintColor = [UIColor clearColor];
-//    [self.navigationController.navigationBar setBackgroundImage:[UIColor createImageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIColor createImageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];  //去掉导航的下端阴影
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
@@ -149,11 +149,11 @@
     NSShadow *shadowAttribute = [[NSShadow alloc]init];
     shadowAttribute.shadowColor = [UIColor clearColor];
     shadowAttribute.shadowOffset = CGSizeMake(0, -1);
-//    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-//                                                                     Color444444, NSForegroundColorAttributeName,
-//                                                                     shadowAttribute, NSShadowAttributeName,
-//                                                                     [UIFont systemFontOfSize:titleFont], NSFontAttributeName,
-//                                                                     nil]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                     Color444444, NSForegroundColorAttributeName,
+                                                                     shadowAttribute, NSShadowAttributeName,
+                                                                     [UIFont systemFontOfSize:titleFont], NSFontAttributeName,
+                                                                     nil]];
 }
 
 - (void)setNaviTitle:(NSString* )title withTitleFont:(CGFloat)fontSize {
@@ -161,35 +161,35 @@
     NSShadow *shadowAttribute = [[NSShadow alloc]init];
     shadowAttribute.shadowColor = [UIColor clearColor];
     shadowAttribute.shadowOffset = CGSizeMake(0, -1);
-//    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-//                                                                     Color444444, NSForegroundColorAttributeName,
-//                                                                     shadowAttribute, NSShadowAttributeName,
-//                                                                     [UIFont systemFontOfSize:fontSize], NSFontAttributeName,
-//                                                                     nil]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                                     Color444444, NSForegroundColorAttributeName,
+                                                                     shadowAttribute, NSShadowAttributeName,
+                                                                     [UIFont systemFontOfSize:fontSize], NSFontAttributeName,
+                                                                     nil]];
 }
 
 - (void)setNaviTitle:(NSString* )title subTitle:(NSString* )subTitle {
-//    [self setNaviTitle:title subTitle:subTitle subColor:Color666666];
+    [self setNaviTitle:title subTitle:subTitle subColor:Color666666];
 }
 
 - (void)setNaviTitle:(NSString* )title subTitle:(NSString* )subTitle subColor:(UIColor* )subcolor{
     
-//    UIView* backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 120, 44)];
+    UIView* backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 120, 44)];
     
-//    UILabel* lable = [[UILabel alloc]initWithFrame:CGRectMake(0, 10, backgroundView.width, 20)];
-//    lable.textColor = Color444444;
-//    lable.textAlignment = NSTextAlignmentCenter;
-//    lable.text = title;
-//    lable.font = [UIFont systemFontOfSize:titleFont];
-//    [backgroundView addSubview:lable];
-//
-//    UILabel* subLable = [[UILabel alloc]initWithFrame:CGRectMake(0, 30, backgroundView.width, 14)];
-//    subLable.textColor = subcolor;
-//    subLable.textAlignment = NSTextAlignmentCenter;
-//    subLable.text = subTitle;
-//    subLable.font = [UIFont systemFontOfSize:12];
-//    [backgroundView addSubview:subLable];
-//    self.navigationItem.titleView = backgroundView;
+    UILabel* lable = [[UILabel alloc]initWithFrame:CGRectMake(0, 10, backgroundView.width, 20)];
+    lable.textColor = Color444444;
+    lable.textAlignment = NSTextAlignmentCenter;
+    lable.text = title;
+    lable.font = [UIFont systemFontOfSize:titleFont];
+    [backgroundView addSubview:lable];
+
+    UILabel* subLable = [[UILabel alloc]initWithFrame:CGRectMake(0, 30, backgroundView.width, 14)];
+    subLable.textColor = subcolor;
+    subLable.textAlignment = NSTextAlignmentCenter;
+    subLable.text = subTitle;
+    subLable.font = [UIFont systemFontOfSize:12];
+    [backgroundView addSubview:subLable];
+    self.navigationItem.titleView = backgroundView;
 }
 
 -(BOOL)judgeChineseOrEnglish:(NSString *)title{
@@ -244,102 +244,102 @@
 
 - (void)setNaviLeftButtonWith:(NSString* )title
 {
-//  [self setNaviLeftButton:title color:Color7b7b7b];
+  [self setNaviLeftButton:title color:Color7b7b7b];
 }
 
 - (void)setNaviLeftButton:(NSString* )title color:(UIColor*)color
 {
-//  if (IS_NOT_EMPTY(title)) {
-//    CGSize textSize = [title sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16.0f], NSFontAttributeName, nil]];
-//    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [leftButton setTitleColor: color forState:UIControlStateNormal];
-//    leftButton.frame = CGRectMake(0, 0, textSize.width+20, textSize.height+10);
-//    [leftButton setTitle:title forState:UIControlStateNormal];
-//    [leftButton setContentEdgeInsets:UIEdgeInsetsMake(0, -40, 0, 0)];
-//    if (self.navigationItem.leftBarButtonItem) {
-//      self.navigationItem.leftBarButtonItem=nil;
-//    }
-//    leftButton.titleLabel.font=[UIFont systemFontOfSize:15];
-//    [leftButton addTarget:self action:@selector(clickLeftButton:) forControlEvents:UIControlEventTouchUpInside];
-//    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
-//    [self.navigationItem setLeftBarButtonItem:leftButtonItem animated:YES];
-//  }
+  if (IS_NOT_EMPTY(title)) {
+    CGSize textSize = [title sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16.0f], NSFontAttributeName, nil]];
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftButton setTitleColor: color forState:UIControlStateNormal];
+    leftButton.frame = CGRectMake(0, 0, textSize.width+20, textSize.height+10);
+    [leftButton setTitle:title forState:UIControlStateNormal];
+    [leftButton setContentEdgeInsets:UIEdgeInsetsMake(0, -40, 0, 0)];
+    if (self.navigationItem.leftBarButtonItem) {
+      self.navigationItem.leftBarButtonItem=nil;
+    }
+    leftButton.titleLabel.font=[UIFont systemFontOfSize:15];
+    [leftButton addTarget:self action:@selector(clickLeftButton:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    [self.navigationItem setLeftBarButtonItem:leftButtonItem animated:YES];
+  }
 }
 
 - (void)setNaviRightButton:(NSString* )title
 {
-//    [self setNaviRightButton:title color:Color7b7b7b];
+    [self setNaviRightButton:title color:Color7b7b7b];
 }
 
 - (void)setNaviRightButton:(NSString* )title color:(UIColor*)color
 {
-//    if (IS_NOT_EMPTY(title)) {
-//        CGSize textSize = [title sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16.0f], NSFontAttributeName, nil]];
-//        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//        [rightButton setTitleColor: color forState:UIControlStateNormal];
-//        rightButton.frame = CGRectMake(0, 0, textSize.width+20, textSize.height+10);
-//        [rightButton setTitle:title forState:UIControlStateNormal];
-//        [rightButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -40)];
-//        if (self.navigationItem.rightBarButtonItem) {
-//          self.navigationItem.rightBarButtonItem=nil;
-//        }
-//        rightButton.titleLabel.font=[UIFont systemFontOfSize:15];
-//        [rightButton addTarget:self action:@selector(clickRightButton:) forControlEvents:UIControlEventTouchUpInside];
-//        UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-//        [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
-//    }else{
-//
-//    }
+    if (IS_NOT_EMPTY(title)) {
+        CGSize textSize = [title sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16.0f], NSFontAttributeName, nil]];
+        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [rightButton setTitleColor: color forState:UIControlStateNormal];
+        rightButton.frame = CGRectMake(0, 0, textSize.width+20, textSize.height+10);
+        [rightButton setTitle:title forState:UIControlStateNormal];
+        [rightButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -40)];
+        if (self.navigationItem.rightBarButtonItem) {
+          self.navigationItem.rightBarButtonItem=nil;
+        }
+        rightButton.titleLabel.font=[UIFont systemFontOfSize:15];
+        [rightButton addTarget:self action:@selector(clickRightButton:) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+        [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
+    }else{
+        self.navigationItem.rightBarButtonItem=nil;
+    }
 }
 
 - (void)setNaviRightButton:(NSString* )title action:(BOOL)action
 {
-//  if (IS_NOT_EMPTY(title)) {
-//    if(self.navigationItem.rightBarButtonItem){
-//        UIButton *rightButton = (UIButton *)self.navigationItem.rightBarButtonItem.customView;
-//        [rightButton setUserInteractionEnabled:action];
-//        if (action) {
-//          [rightButton setTitleColor: Color7b7b7b forState:UIControlStateNormal];
-//        }else{
-//          [rightButton setTitleColor: Colorbbbbbb forState:UIControlStateNormal];
-//        }
-//    }else{
-//
-//        CGSize textSize = [title sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16.0f], NSFontAttributeName, nil]];
-//        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//        rightButton.frame = CGRectMake(0, 0, textSize.width+20, textSize.height+10);
-//        [rightButton setTitle:title forState:UIControlStateNormal];
-//        [rightButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -40)];
-//        rightButton.titleLabel.font=[UIFont systemFontOfSize:15];
-//        [rightButton addTarget:self action:@selector(clickRightButton:) forControlEvents:UIControlEventTouchUpInside];
-//        [rightButton setUserInteractionEnabled:action];
-//        if (action) {
-//          [rightButton setTitleColor: Color7b7b7b forState:UIControlStateNormal];
-//        }else{
-//          [rightButton setTitleColor: Colorbbbbbb forState:UIControlStateNormal];
-//        }
-//        UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-//        [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
-//    }
-//  }else{
-//     self.navigationItem.rightBarButtonItem=nil;
-//  }
+  if (IS_NOT_EMPTY(title)) {
+    if(self.navigationItem.rightBarButtonItem){
+        UIButton *rightButton = (UIButton *)self.navigationItem.rightBarButtonItem.customView;
+        [rightButton setUserInteractionEnabled:action];
+        if (action) {
+          [rightButton setTitleColor: Color7b7b7b forState:UIControlStateNormal];
+        }else{
+          [rightButton setTitleColor: Colorbbbbbb forState:UIControlStateNormal];
+        }
+    }else{
+
+        CGSize textSize = [title sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:16.0f], NSFontAttributeName, nil]];
+        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        rightButton.frame = CGRectMake(0, 0, textSize.width+20, textSize.height+10);
+        [rightButton setTitle:title forState:UIControlStateNormal];
+        [rightButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -40)];
+        rightButton.titleLabel.font=[UIFont systemFontOfSize:15];
+        [rightButton addTarget:self action:@selector(clickRightButton:) forControlEvents:UIControlEventTouchUpInside];
+        [rightButton setUserInteractionEnabled:action];
+        if (action) {
+          [rightButton setTitleColor: Color7b7b7b forState:UIControlStateNormal];
+        }else{
+          [rightButton setTitleColor: Colorbbbbbb forState:UIControlStateNormal];
+        }
+        UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+        [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
+    }
+  }else{
+     self.navigationItem.rightBarButtonItem=nil;
+  }
 }
 
 - (void)setNaviRightImgButton:(NSString* )imgName
 {
-//    if (IS_NOT_EMPTY(imgName)) {
-//        UIImage *img1 = [UIImage imageNamed:imgName];
-//        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//        rightButton.frame = CGRectMake(0, 0, 80, 44);
-//        [rightButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -60)];
-//        [rightButton addTarget:self action:@selector(clickRightButton:) forControlEvents:UIControlEventTouchUpInside];
-//        [rightButton setImage:img1 forState:UIControlStateNormal];
-//         UIImage * lpImage2 = [UIImage imageByApplyingAlpha:0.5 image:img1];
-//        [rightButton setImage:lpImage2 forState:UIControlStateHighlighted];
-//        UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-//        [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
-//    }
+    if (IS_NOT_EMPTY(imgName)) {
+        UIImage *img1 = [UIImage imageNamed:imgName];
+        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        rightButton.frame = CGRectMake(0, 0, 80, 44);
+        [rightButton setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, -60)];
+        [rightButton addTarget:self action:@selector(clickRightButton:) forControlEvents:UIControlEventTouchUpInside];
+        [rightButton setImage:img1 forState:UIControlStateNormal];
+         UIImage * lpImage2 = [self imageByApplyingAlpha:0.5 image:img1];
+        [rightButton setImage:lpImage2 forState:UIControlStateHighlighted];
+        UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+        [self.navigationItem setRightBarButtonItem:rightButtonItem animated:YES];
+    }
 }
 - (void)clickRightButton:(id)sender {
    

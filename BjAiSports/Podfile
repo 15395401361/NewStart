@@ -8,7 +8,6 @@ target 'BjAiSports' do
   pod 'SDWebImage', '~> 4.4.2'
   pod 'MJRefresh', '~> 3.1.15.7'
   pod 'Masonry', '~> 1.1.0'
-  pod 'MJExtension', '~> 3.0.15.1'
 
 end 
 
