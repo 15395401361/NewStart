@@ -50,6 +50,8 @@
 #define Color666666 [UIColor colorWithHexString:@"#666666"]//淡灰色
 #define Color7b7b7b [UIColor colorWithHexString:@"#7b7b7b"]//灰色
 #define Colorbbbbbb [UIColor colorWithHexString:@"#bbbbbb"]//黑色
+#define Color707070 [UIColor colorWithHexString:@"#707070"]//
+#define Colorf7f7f7 [UIColor colorWithHexString:@"#f7f7f7"]//
 
 
 #define SLYY_Camera_permissions @"请通过“设置>隐私>相机”打开爱体育，以允许程序访问您的相机"//相机权限

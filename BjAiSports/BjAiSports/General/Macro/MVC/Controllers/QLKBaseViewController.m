@@ -48,7 +48,6 @@
     self.navigationController.navigationBar.hidden = NO;
     self.navigationController.navigationBarHidden = NO;
     self.navigationController.navigationBar.tintColor = [UIColor clearColor];
-    [self.navigationController.navigationBar setBackgroundImage:[UIColor createImageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];  //去掉导航的下端阴影
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
@@ -90,9 +89,8 @@
 //显示空数据背景
 - (void)showEmptyDataBackgroundViewWithImage:(UIImage *)logo title:(NSString*)title  description:(NSString*)description
 {
-    /***
     if (!self.emptyDataBackgroundView) {
-        _emptyDataBackgroundView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kMainScreenFrameWitdh, 267)];
+        _emptyDataBackgroundView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 267)];
         _emptyDataBackgroundView.backgroundColor = Colorf7f7f7;
         [self.view addSubview:_emptyDataBackgroundView];
         [_emptyDataBackgroundView addSubview:_logo];
@@ -100,31 +98,31 @@
         [_emptyDataBackgroundView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(weakSelf.view).width.insets(UIEdgeInsetsMake(0, 0, 0, 0));
         }];
-        
+     
         _logo = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 122, 129)];
-        
+     
         [_emptyDataBackgroundView addSubview:_logo];
         [_logo mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(weakSelf.emptyDataBackgroundView);
             make.top.equalTo(weakSelf.view).with.offset(31);
         }];
-        
-        _titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kMainScreenFrameWitdh, 16)];
+     
+        _titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 16)];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textColor = Color707070;
         _titleLabel.font = [UIFont systemFontOfSize:16];
-        
+     
         [_emptyDataBackgroundView addSubview:_titleLabel];
         [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(weakSelf.emptyDataBackgroundView);
             make.top.equalTo(weakSelf.logo.mas_bottom).with.offset(15);
         }];
         
-        _desLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kMainScreenFrameWitdh, 12)];
+        _desLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 12)];
         _desLabel.textAlignment = NSTextAlignmentCenter;
         _desLabel.textColor = Color707070;
         _desLabel.font = [UIFont systemFontOfSize:14];
-        
+     
         [_emptyDataBackgroundView addSubview:_desLabel];
         [_desLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(weakSelf.emptyDataBackgroundView);
@@ -135,8 +133,6 @@
     [self.logo setImage:logo];
     self.titleLabel.text = title;
     self.desLabel.text = description;
-     
-     **/
 }
 
 - (void)hideShowEmptyDataBackgroundView

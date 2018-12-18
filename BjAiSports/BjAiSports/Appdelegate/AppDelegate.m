@@ -7,8 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "BJAMineController.h"   // 我的
+#import "BJASocialController.h" // 社会
+#import "BJAHomeController.h"  // 首页
+#import "BJACourseController.h" // 课程
+#import "QLKNavigationController.h"
+
 
 @interface AppDelegate ()
+
+
+
+
 
 @end
 
@@ -16,7 +26,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+  
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self setupViewControllers];
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
+    [self customizeInterface];
     return YES;
 }
 
@@ -45,6 +61,81 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+
+#pragma mark - Methods
+
+- (void)setupViewControllers {
+    BJAHomeController *homeVC = [[BJAHomeController alloc] init];
+    homeVC.title = @"首页";
+    QLKNavigationController *homeNavi = [[QLKNavigationController alloc] initWithRootViewController:homeVC];
+
+    BJASocialController *socialVC = [[BJASocialController alloc] init];
+    socialVC.title = @"社交";
+    QLKNavigationController *socialNavi = [[QLKNavigationController alloc]
+                                                    initWithRootViewController:socialVC];
+
+    BJACourseController *courseVC = [[BJACourseController alloc] init];
+    courseVC.title = @"课程";
+    QLKNavigationController *courseNavi = [[QLKNavigationController alloc]
+                                                   initWithRootViewController:courseVC];
+    BJAMineController *mineVC = [[BJAMineController alloc] init];
+    mineVC.title = @"我的";
+    QLKNavigationController *mineNavi = [[QLKNavigationController alloc]
+                                           initWithRootViewController:mineVC];
+
+    RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
+    [tabBarController setViewControllers:@[homeNavi, socialNavi,
+                                           courseNavi,mineNavi]];
+    self.tabBarController = tabBarController;
+    [self customizeTabBarForController:tabBarController];
+}
+
+- (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
+    NSArray *tabBarItemImages = @[@"home", @"huanzhe", @"wode",@"huanzhe"];
+    NSInteger index = 0;
+    for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
+        
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"NewHomeBar_%@Select",
+                                                      [tabBarItemImages objectAtIndex:index]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"NewHomeBar_%@Nomal",
+                                                        [tabBarItemImages objectAtIndex:index]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        index++;
+    }
+}
+
+- (void)customizeInterface {
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    
+    UIImage *backgroundImage = nil;
+    NSDictionary *textAttributes = nil;
+    
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+        backgroundImage = [UIImage imageNamed:@"navigationbar_background_tall"];
+        
+        textAttributes = @{
+                           NSFontAttributeName: [UIFont boldSystemFontOfSize:18],
+                           NSForegroundColorAttributeName: [UIColor blackColor],
+                           };
+    } else {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
+        backgroundImage = [UIImage imageNamed:@"navigationbar_background"];
+        
+        textAttributes = @{
+                           UITextAttributeFont: [UIFont boldSystemFontOfSize:18],
+                           UITextAttributeTextColor: [UIColor blackColor],
+                           UITextAttributeTextShadowColor: [UIColor clearColor],
+                           UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetZero],
+                           };
+#endif
+    }
+    
+    [navigationBarAppearance setBackgroundImage:backgroundImage
+                                  forBarMetrics:UIBarMetricsDefault];
+    [navigationBarAppearance setTitleTextAttributes:textAttributes];
 }
 
 
