@@ -80,7 +80,7 @@
     BJACourseController *courseVC = [[BJACourseController alloc] init];
     courseVC.title = @"课程";
     QLKNavigationController *courseNavi = [[QLKNavigationController alloc]
-                                                   initWithRootViewController:courseVC];
+                                                    initWithRootViewController:courseVC];
     BJAMineController *mineVC = [[BJAMineController alloc] init];
     mineVC.title = @"我的";
     QLKNavigationController *mineNavi = [[QLKNavigationController alloc]

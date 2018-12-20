@@ -12,6 +12,8 @@
 @interface QLKBaseViewController : UIViewController
 {
     
+    
+    
 }
 
 + (id)getController:(NSString *)className withData:(id)data;

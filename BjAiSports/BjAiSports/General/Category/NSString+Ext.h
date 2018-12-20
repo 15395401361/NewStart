@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (Ext)
+//过滤表情
+- (NSString *)emojizedString;
++ (NSString *)emojizedStringWithString:(NSString *)text;
++ (BOOL)stringContainsEmoji:(NSString *)string;
++ (NSString *)disable_emoji:(NSString *)text;
 
 /**
  * 获取设备名称

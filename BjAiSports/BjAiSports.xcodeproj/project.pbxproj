@@ -36,6 +36,18 @@
 		09BD11DE21C8C3DE005B72D7 /* navigationbar_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BD11DA21C8C3DD005B72D7 /* navigationbar_background@2x.png */; };
 		09BD11DF21C8C3DE005B72D7 /* navigationbar_background_tall.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BD11DB21C8C3DD005B72D7 /* navigationbar_background_tall.png */; };
 		09BD11E021C8C3DE005B72D7 /* navigationbar_background_tall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BD11DC21C8C3DD005B72D7 /* navigationbar_background_tall@2x.png */; };
+		09BD11EC21C8D66E005B72D7 /* QLKDeviceIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11EB21C8D66E005B72D7 /* QLKDeviceIdentifier.m */; };
+		09BD11F121C8D676005B72D7 /* QLKHelpWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11EF21C8D676005B72D7 /* QLKHelpWindowManager.m */; };
+		09BD11F221C8D676005B72D7 /* QLKHelpWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11F021C8D676005B72D7 /* QLKHelpWindow.m */; };
+		09BD11F621C8D6C6005B72D7 /* QQPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11F521C8D6C6005B72D7 /* QQPopMenuView.m */; };
+		09BD11F921C8E2CE005B72D7 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11F821C8E2CE005B72D7 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09BD11FF21C8E93F005B72D7 /* QLKImageScaleTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD11FE21C8E93F005B72D7 /* QLKImageScaleTools.m */; };
+		09BD120821C8F055005B72D7 /* QLKCommonAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD120521C8F055005B72D7 /* QLKCommonAlertView.m */; };
+		09BD120921C8F055005B72D7 /* QLKCommonAlertView+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD120621C8F055005B72D7 /* QLKCommonAlertView+Ext.m */; };
+		09BD120C21C8F064005B72D7 /* QLKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD120A21C8F064005B72D7 /* QLKTextView.m */; };
+		09BD121121C8F071005B72D7 /* QLKUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD120E21C8F071005B72D7 /* QLKUITextField.m */; };
+		09BD121221C8F071005B72D7 /* QLKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD121021C8F071005B72D7 /* QLKTextField.m */; };
+		09BD121521C8F336005B72D7 /* CustomMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD121321C8F336005B72D7 /* CustomMaskView.m */; };
 		792E537249202CC160E37CB7 /* libPods-BjAiSports.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F598745443A519538028B6A0 /* libPods-BjAiSports.a */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +128,30 @@
 		09BD11DA21C8C3DD005B72D7 /* navigationbar_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_background@2x.png"; sourceTree = "<group>"; };
 		09BD11DB21C8C3DD005B72D7 /* navigationbar_background_tall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar_background_tall.png; sourceTree = "<group>"; };
 		09BD11DC21C8C3DD005B72D7 /* navigationbar_background_tall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar_background_tall@2x.png"; sourceTree = "<group>"; };
+		09BD11EA21C8D66E005B72D7 /* QLKDeviceIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKDeviceIdentifier.h; sourceTree = "<group>"; };
+		09BD11EB21C8D66E005B72D7 /* QLKDeviceIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKDeviceIdentifier.m; sourceTree = "<group>"; };
+		09BD11ED21C8D676005B72D7 /* QLKHelpWindowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKHelpWindowManager.h; sourceTree = "<group>"; };
+		09BD11EE21C8D676005B72D7 /* QLKHelpWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKHelpWindow.h; sourceTree = "<group>"; };
+		09BD11EF21C8D676005B72D7 /* QLKHelpWindowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKHelpWindowManager.m; sourceTree = "<group>"; };
+		09BD11F021C8D676005B72D7 /* QLKHelpWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKHelpWindow.m; sourceTree = "<group>"; };
+		09BD11F421C8D6C5005B72D7 /* QQPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQPopMenuView.h; sourceTree = "<group>"; };
+		09BD11F521C8D6C6005B72D7 /* QQPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQPopMenuView.m; sourceTree = "<group>"; };
+		09BD11F721C8E2CE005B72D7 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		09BD11F821C8E2CE005B72D7 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		09BD11FD21C8E93F005B72D7 /* QLKImageScaleTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKImageScaleTools.h; sourceTree = "<group>"; };
+		09BD11FE21C8E93F005B72D7 /* QLKImageScaleTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKImageScaleTools.m; sourceTree = "<group>"; };
+		09BD120421C8F055005B72D7 /* QLKCommonAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKCommonAlertView.h; sourceTree = "<group>"; };
+		09BD120521C8F055005B72D7 /* QLKCommonAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKCommonAlertView.m; sourceTree = "<group>"; };
+		09BD120621C8F055005B72D7 /* QLKCommonAlertView+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QLKCommonAlertView+Ext.m"; sourceTree = "<group>"; };
+		09BD120721C8F055005B72D7 /* QLKCommonAlertView+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QLKCommonAlertView+Ext.h"; sourceTree = "<group>"; };
+		09BD120A21C8F064005B72D7 /* QLKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKTextView.m; sourceTree = "<group>"; };
+		09BD120B21C8F064005B72D7 /* QLKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKTextView.h; sourceTree = "<group>"; };
+		09BD120D21C8F071005B72D7 /* QLKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKTextField.h; sourceTree = "<group>"; };
+		09BD120E21C8F071005B72D7 /* QLKUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKUITextField.m; sourceTree = "<group>"; };
+		09BD120F21C8F071005B72D7 /* QLKUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKUITextField.h; sourceTree = "<group>"; };
+		09BD121021C8F071005B72D7 /* QLKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKTextField.m; sourceTree = "<group>"; };
+		09BD121321C8F336005B72D7 /* CustomMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMaskView.m; sourceTree = "<group>"; };
+		09BD121421C8F336005B72D7 /* CustomMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMaskView.h; sourceTree = "<group>"; };
 		8BE280E22A19F674F2943E9D /* Pods-BjAiSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BjAiSports.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BjAiSports/Pods-BjAiSports.debug.xcconfig"; sourceTree = "<group>"; };
 		F598745443A519538028B6A0 /* libPods-BjAiSports.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BjAiSports.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA24F151C8970E8E80F2DAAD /* Pods-BjAiSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BjAiSports.release.xcconfig"; path = "Pods/Target Support Files/Pods-BjAiSports/Pods-BjAiSports.release.xcconfig"; sourceTree = "<group>"; };
@@ -287,6 +323,7 @@
 		0967258321C73A4F00C79CE8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				09BD11E721C8D5C2005B72D7 /* Util */,
 				0919D3C421C892FC00B5E2CD /* NSMutableArray+Ext.h */,
 				0919D3C521C892FC00B5E2CD /* NSMutableArray+Ext.m */,
 				0919D3C221C892AC00B5E2CD /* NSDictionary+Ext.h */,
@@ -315,6 +352,7 @@
 		0967258521C73A6600C79CE8 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				09BD11FA21C8E76E005B72D7 /* Web */,
 				0967258921C73AC000C79CE8 /* MVC */,
 				0967258821C73AAB00C79CE8 /* NetWorkEngine */,
 				0967258721C73A9A00C79CE8 /* MainArchitecture */,
@@ -476,6 +514,108 @@
 				09BD11B921C79834005B72D7 /* QLKNavigationController.m */,
 			);
 			path = Navgation;
+			sourceTree = "<group>";
+		};
+		09BD11E721C8D5C2005B72D7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				09BD120321C8EFEF005B72D7 /* TextView */,
+				09BD120221C8EFD6005B72D7 /* ToastView */,
+				09BD120121C8EFC6005B72D7 /* AlertView */,
+				09BD120021C8EFB8005B72D7 /* TextFiled */,
+				09BD11FC21C8E922005B72D7 /* ImageTools */,
+				09BD11F321C8D699005B72D7 /* PopMenu */,
+				09BD11E921C8D637005B72D7 /* DeviceIdentity */,
+				09BD11E821C8D62A005B72D7 /* HelpWindow */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		09BD11E821C8D62A005B72D7 /* HelpWindow */ = {
+			isa = PBXGroup;
+			children = (
+				09BD11EE21C8D676005B72D7 /* QLKHelpWindow.h */,
+				09BD11F021C8D676005B72D7 /* QLKHelpWindow.m */,
+				09BD11ED21C8D676005B72D7 /* QLKHelpWindowManager.h */,
+				09BD11EF21C8D676005B72D7 /* QLKHelpWindowManager.m */,
+			);
+			path = HelpWindow;
+			sourceTree = "<group>";
+		};
+		09BD11E921C8D637005B72D7 /* DeviceIdentity */ = {
+			isa = PBXGroup;
+			children = (
+				09BD11F721C8E2CE005B72D7 /* SFHFKeychainUtils.h */,
+				09BD11F821C8E2CE005B72D7 /* SFHFKeychainUtils.m */,
+				09BD11EA21C8D66E005B72D7 /* QLKDeviceIdentifier.h */,
+				09BD11EB21C8D66E005B72D7 /* QLKDeviceIdentifier.m */,
+			);
+			path = DeviceIdentity;
+			sourceTree = "<group>";
+		};
+		09BD11F321C8D699005B72D7 /* PopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				09BD11F421C8D6C5005B72D7 /* QQPopMenuView.h */,
+				09BD11F521C8D6C6005B72D7 /* QQPopMenuView.m */,
+			);
+			path = PopMenu;
+			sourceTree = "<group>";
+		};
+		09BD11FA21C8E76E005B72D7 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		09BD11FC21C8E922005B72D7 /* ImageTools */ = {
+			isa = PBXGroup;
+			children = (
+				09BD11FD21C8E93F005B72D7 /* QLKImageScaleTools.h */,
+				09BD11FE21C8E93F005B72D7 /* QLKImageScaleTools.m */,
+			);
+			path = ImageTools;
+			sourceTree = "<group>";
+		};
+		09BD120021C8EFB8005B72D7 /* TextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				09BD120D21C8F071005B72D7 /* QLKTextField.h */,
+				09BD121021C8F071005B72D7 /* QLKTextField.m */,
+				09BD120F21C8F071005B72D7 /* QLKUITextField.h */,
+				09BD120E21C8F071005B72D7 /* QLKUITextField.m */,
+			);
+			path = TextFiled;
+			sourceTree = "<group>";
+		};
+		09BD120121C8EFC6005B72D7 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				09BD121421C8F336005B72D7 /* CustomMaskView.h */,
+				09BD121321C8F336005B72D7 /* CustomMaskView.m */,
+				09BD120421C8F055005B72D7 /* QLKCommonAlertView.h */,
+				09BD120521C8F055005B72D7 /* QLKCommonAlertView.m */,
+				09BD120721C8F055005B72D7 /* QLKCommonAlertView+Ext.h */,
+				09BD120621C8F055005B72D7 /* QLKCommonAlertView+Ext.m */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		09BD120221C8EFD6005B72D7 /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
+		09BD120321C8EFEF005B72D7 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				09BD120B21C8F064005B72D7 /* QLKTextView.h */,
+				09BD120A21C8F064005B72D7 /* QLKTextView.m */,
+			);
+			path = TextView;
 			sourceTree = "<group>";
 		};
 		5343E4C7D73F90EFD9E97B7F /* Pods */ = {
@@ -669,27 +809,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				0919D3C921C896B400B5E2CD /* QLKEnvironmentModel.m in Sources */,
+				09BD11F221C8D676005B72D7 /* QLKHelpWindow.m in Sources */,
 				0919D3C321C892AC00B5E2CD /* NSDictionary+Ext.m in Sources */,
 				09BD11D121C8A023005B72D7 /* BJAMineController.m in Sources */,
+				09BD11EC21C8D66E005B72D7 /* QLKDeviceIdentifier.m in Sources */,
+				09BD11F921C8E2CE005B72D7 /* SFHFKeychainUtils.m in Sources */,
 				09BD11B321C79676005B72D7 /* RDVTabBarController.m in Sources */,
 				0919D3C621C892FC00B5E2CD /* NSMutableArray+Ext.m in Sources */,
 				09BD11CE21C8A00D005B72D7 /* BJAHomeController.m in Sources */,
 				0919D3B521C88DF800B5E2CD /* QLKApiClient+Ext.m in Sources */,
+				09BD120821C8F055005B72D7 /* QLKCommonAlertView.m in Sources */,
 				0919D3B621C88DF800B5E2CD /* QLKApiClient.m in Sources */,
 				09BD11BA21C79834005B72D7 /* QLKNavigationController.m in Sources */,
 				0967255E21C737CC00C79CE8 /* main.m in Sources */,
 				09BD11BF21C798AB005B72D7 /* QLKBaseViewController.m in Sources */,
 				09BD11C921C7A8CA005B72D7 /* UIColor+Ext.m in Sources */,
+				09BD11F121C8D676005B72D7 /* QLKHelpWindowManager.m in Sources */,
+				09BD11F621C8D6C6005B72D7 /* QQPopMenuView.m in Sources */,
 				09BD11B421C79676005B72D7 /* RDVTabBar.m in Sources */,
+				09BD120921C8F055005B72D7 /* QLKCommonAlertView+Ext.m in Sources */,
 				0919D39721C7B13F00B5E2CD /* UIView+Ext.m in Sources */,
 				0919D3CD21C89A3800B5E2CD /* NSString+Ext.m in Sources */,
 				0967255021C737CA00C79CE8 /* AppDelegate.m in Sources */,
+				09BD121521C8F336005B72D7 /* CustomMaskView.m in Sources */,
 				09BD11D721C8A04B005B72D7 /* BJASocialController.m in Sources */,
+				09BD120C21C8F064005B72D7 /* QLKTextView.m in Sources */,
 				09BD11B521C79676005B72D7 /* RDVTabBarItem.m in Sources */,
+				09BD121121C8F071005B72D7 /* QLKUITextField.m in Sources */,
 				0919D3C021C8912C00B5E2CD /* KXJson.m in Sources */,
 				0919D3BF21C8912C00B5E2CD /* JSONKit.m in Sources */,
+				09BD121221C8F071005B72D7 /* QLKTextField.m in Sources */,
 				09BD11D421C8A034005B72D7 /* BJACourseController.m in Sources */,
 				09BD11C021C798AB005B72D7 /* QLKSubBaseViewController.m in Sources */,
+				09BD11FF21C8E93F005B72D7 /* QLKImageScaleTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +929,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -829,6 +982,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -852,6 +1006,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wlf.BjAiSports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -875,6 +1030,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wlf.BjAiSports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -892,6 +1048,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wlf.BjAiSportsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -910,6 +1067,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wlf.BjAiSportsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -927,6 +1085,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wlf.BjAiSportsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -944,6 +1103,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wlf.BjAiSportsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
